@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 }
 
 CONFIG(debug, debug|release){
-    LIBS += -L$$(OMBUILDDIR)/lib/omc -lomqwtd
+    LIBS += -L$$(OMBUILDDIR)/lib/omc -lqwtd
     DESTDIR = ../bin
     UI_DIR = debug/generatedfiles/ui
     OBJECTS_DIR = debug/generatedfiles
@@ -19,7 +19,7 @@ CONFIG(debug, debug|release){
     INCLUDEPATH  += debug/generatedfiles/ui
 
 }else {
-    LIBS += -L$$(OMBUILDDIR)/lib/omc -lomqwt
+    LIBS += -L$$(OMBUILDDIR)/lib/omc -lqwt
     DESTDIR = ../bin
     UI_DIR = release/generatedfiles/ui
     OBJECTS_DIR = release/generatedfiles

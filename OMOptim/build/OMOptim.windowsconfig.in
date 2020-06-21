@@ -69,9 +69,9 @@ INCLUDEPATH += $${CORBAINC} \
 
 ### LIBRARIES (order has an impact !!)
 CONFIG(debug, debug|release){
-    LIBS += $${CORBALIBS} -L$$(OMBUILDDIR)/lib/omc -lOMOptimBasisd -lomqwtd
+    LIBS += $${CORBALIBS} -L$$(OMBUILDDIR)/lib/omc -lOMOptimBasisd -lqwtd
 }else {
-    LIBS += $${CORBALIBS} -L$$(OMBUILDDIR)/lib/omc -lOMOptimBasis -lomqwt
+    LIBS += $${CORBALIBS} -L$$(OMBUILDDIR)/lib/omc -lOMOptimBasis -lqwt
 }
 
 LIBS += -L../../ParadisEO-2.0.1/build/eo/lib -leo -leoutils \
